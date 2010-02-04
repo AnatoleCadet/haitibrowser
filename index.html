@@ -2,7 +2,7 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en-us" />
-    <title>Haiti Crisis Map</title>
+    <title>Haiti Data Dissemination Dashboard</title>
     <meta name="description" content=" " />
     <meta name="keywords" content=" " />
     <meta name="robots" content="index, follow" /> 
@@ -11,11 +11,11 @@
     <link href="./css/haiti.css" rel="stylesheet" media="screen" type="text/css" />
     <link href="./css/gaz.css" rel="stylesheet" media="screen" type="text/css" />
     
-    <script type="text/javascript" src="http://extjs.cachefly.net/builds/ext-cdn-2060.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-2.3.0/resources/css/ext-all.css" />
-    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" />
-    <script type="text/javascript" src="http://openlayers.org/api/2.8/OpenLayers.js"></script> 
-    <script type="text/javascript" src="js/GeoExt/script/GeoExt.js"></script> 
+    <script type="text/javascript" src="js/ext-cdn-2060.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ext-all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/OpenLayers.js"></script> 
+    <script type="text/javascript" src="js/GeoExt.js"></script> 
     <script type="text/javascript" src="js/helpers.js"></script> 
     <script type="text/javascript" src="js/ArgParser.js"></script> 
     <script type="text/javascript" src="js/Controls.js"></script> 
@@ -29,11 +29,6 @@
 
     <!link rel="stylesheet" type="text/css" href="/media/css/nms_ol.css" /> 
     
-
-
-    <script type="text/javascript">
-           var base_wms = 'http://hypercube.telascience.org/cgi-bin/mapserv?map=/home/racicot/haiti/mapfiles/basedata.map&';
-    </script>
 
     <script type="text/javascript" src="./js/haiti.js"></script> 
 
@@ -88,10 +83,12 @@
   <body >
 
     
-        <div id="title" class="title1" align="center">
+        <div id="title" class="title1" align="center" style="padding-top: 15px; height: 100%">
+          Haiti Data Dissemination Dashboard
         </div>
         <div id="contrib-div"></div>
         <div id="mappanel"></div>
+
         <div id="tree"></div>
         <div id="west"></div>
         <div id="west-panel"></div>
@@ -100,21 +97,17 @@
         <div class="x-window-header">Query Results</div>
         <div id="query-tree">
         </div>
+
         </div>
         <div id="address_div" style="display: none">
-    Address: <form onsubmit="gaz.osmGaz($('address').value); return false;"><input type="text" id="address" /> <input type="submit" onclick="gaz.osmGaz($('address').value); return false;"  value="Show"/> <br />(Powered by OSM, can also enter MGRS.)</form>
+          <p>This dashboard includes road data and satellite imagery of Haiti. The purpose is to provide Haitian government and people with access to data for recovery and reconstruction.<br/><br/></p>
+          <ul>
+            <li>For Haiti based support, contact Erdem (erdem@gmail.com)</li>
+            <li>For Technical support, contact Andrew Turner (andrew@fortiusone.com)</li>
+          </ul>
         </div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-12649811-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 
 </body>
 </html>
+
 

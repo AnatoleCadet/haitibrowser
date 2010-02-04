@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Medical Centers, Various Sources, Jan 2010</name>
+    <description>This map displays locations of medical centers from a variety of different sources for the Haiti Earthquake relief effort.</description>
+    <atom:author>
+        <atom:name>kevin</atom:name>
+    </atom:author>
+    <atom:link href="/haiti/data/geocommons/302" />   
+     
+        <NetworkLink>
+        <name><![CDATA[GeoFarik Hospitals - ]]></name>
+        <Link>
+            <href>data/geocommons/302/overlays/0.kml?timestamp=MjAxMC0wMS0yOSAyMjoxOTo1NCBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[GeoFarik Hospitals - ]]></name>
+        <Link>
+            <href>data/geocommons/302/overlays/1.kml?timestamp=MjAxMC0wMS0yOSAyMjoxOTo1NCBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Port Au Prince Hospitals - ]]></name>
+        <Link>
+            <href>data/geocommons/302/overlays/2.kml?timestamp=MjAxMC0wMS0yOSAyMjoxOTo1NCBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Sahana Hospitals  - ]]></name>
+        <Link>
+            <href>data/geocommons/302/overlays/3.kml?timestamp=MjAxMC0wMS0yOSAyMjoxOTo1NCBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[GeoFarik Hospitals - ]]></name>
+        <Link>
+            <href>data/geocommons/302/overlays/4.kml?timestamp=MjAxMC0wMS0yOSAyMjoxOTo1NCBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+      </Document>
+</kml>

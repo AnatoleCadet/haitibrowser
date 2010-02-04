@@ -13,6 +13,7 @@ function contains(a, obj) {
 
 Ext.onReady(function() {
     var enable_gmaps = false;
+    Ext.BLANK_IMAGE_URL = 'images/s.gif';
     
     Ext.DomHelper.append(document.body,
                          {tag: 'div',id: 'address2'});
@@ -28,7 +29,7 @@ Ext.onReady(function() {
                                             20037508.34,20037508.34),
         'controls': [new OpenLayers.Control.Navigation(), new OpenLayers.Control.PanZoomBar(),
                      new OpenLayers.Control.Attribution()],
-        'theme': 'http://openlayers.org/dev/theme/default/style.css'             };
+        'theme': 'css/style.css'             };
     
     OpenLayers.IMAGE_RELOAD_ATTEMPTS = 2;
 
@@ -41,328 +42,88 @@ Ext.onReady(function() {
         expanded: true
     });
     var layer_groups = [];
-
+    var sfc_overlays = [];
     /////////////////////////////////////
     // OSM Base Layers
     /////////////////////////////////////
-    var OSM_mapnik = new OpenLayers.Layer.TMS(
-        "OpenStreetMap (Haiti)",
-        "http://live.openstreetmap.nl/haiti/",
-        {
-            type: 'png', getURL: osm_getTileURL,
-            displayOutsideMaxExtent: true,
-            attribution: '<a href="http://www.openstreetmap.org/">' +
-                'OpenStreetMap</a>',
-            buffer: 0, linkId: 'osm'    
-        }
-    );
-    map.addLayers([OSM_mapnik]);
-    var haiti_best = new OpenLayers.Layer.XYZ("Satellite/Aerial Imagery",
-        "http://hypercube.telascience.org/tiles/1.0.0/haiti-best-900913/${z}/${x}/${y}.jpg",
+    // var OSM_mapnik = new OpenLayers.Layer.XYZ(
+    //     "OpenStreetMap (Haiti) local", 
+    //     "tiles/osm/${z}/${x}/${y}.png",
+    //     {
+    //         type: 'png', getURL: osm_getTileURL,
+    //         displayOutsideMaxExtent: true,
+    //         attribution: '<a href="http://www.openstreetmap.org/">' +
+    //             'OpenStreetMap</a>',
+    //         buffer: 0, linkId: 'osm'    
+    //     }
+    // );
+
+    var OSM_local = new OpenLayers.Layer.XYZ(
+        "OpenStreetMap (Haiti) local",
+        "tiles/osm/${z}/${x}/${y}.png",
         {
             buffer:0,
-            visibility: false, linkId:'basephoto'
+            visibility: false, linkId:'basephoto',
+            numZoomLevels: 19
         }
-                                             );
+    );    
+    map.addLayers([OSM_local]);
+       
+    var haiti_best = new OpenLayers.Layer.XYZ("Satellite/Aerial Imagery",
+        "tiles/haiti-best-900913/${z}/${x}/${y}.jpeg",
+        {
+            buffer:0,
+            visibility: false, linkId:'basephoto',
+            numZoomLevels: 19
+        }
+    );
     map.addLayer(haiti_best);
 
-    /////////////////////////////////////
-    // Google Base Layers
-    /////////////////////////////////////
-    if (enable_gmaps) {
-        var gphy = new OpenLayers.Layer.Google( "Google Terrain",
-            {type: G_PHYSICAL_MAP, 'sphericalMercator': true} );
-        var gmap = new OpenLayers.Layer.Google( "Google Streets",
-            {'sphericalMercator': true});
-        var ghyb = new OpenLayers.Layer.Google("Google Hybrid",
-            {type: G_HYBRID_MAP, 'sphericalMercator': true} );
-        var gsat = new OpenLayers.Layer.Google("Google Satellite",
-            {type: G_SATELLITE_MAP, 'sphericalMercator': true} );
-        map.addLayers([gphy,ghyb,gmap,gsat]);
-    }
 
-
+    // var OSM_mapnik = new OpenLayers.Layer.TMS(
+    //     "OpenStreetMap (Haiti)",
+    //     "http://live.openstreetmap.nl/haiti/",
+    //     {
+    //         type: 'png', getURL: osm_getTileURL,
+    //         displayOutsideMaxExtent: true,
+    //         attribution: '<a href="http://www.openstreetmap.org/">' +
+    //             'OpenStreetMap</a>',
+    //         buffer: 0, linkId: 'osm'    
+    //     }
+    // );
+    // map.addLayers([OSM_mapnik]);    
+    // 
     // Layer root container
     layerRoot.appendChild(new GeoExt.tree.BaseLayerContainer({
         text: "Base Layers",
         map: map,
         draggable:false,
         expanded: true
-    }));
-
-    /////////////////////////////////////
-    // Digital Globe Image Layers
-    /////////////////////////////////////
-    var dglobe_layers = [];
-    var dg_crisis_tc = new OpenLayers.Layer.XYZ(
-        "DG Crisis Event Service",
-        "http://maps.nypl.org/tilecache/1/dg_crisis/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'dgcrisis'
-        }
-    );
-    dglobe_layers.push(dg_crisis_tc);
-    var wv_pre_tc = new OpenLayers.Layer.XYZ(
-        "DG Worldview (Pre-Event)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldview-pre-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wvpre'
-
-        }
-    );
-    dglobe_layers.push(wv_pre_tc);
-    var qbird_pre_tc = new OpenLayers.Layer.XYZ(
-        "DG Quickbird (Pre-Event)",
-        "http://hypercube.telascience.org/tiles/1.0.0/quickbird-pre-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'qbpre'
-        }
-    );
-    dglobe_layers.push(qbird_pre_tc);
-    var qbird_011510_tc = new OpenLayers.Layer.XYZ(
-        "DG Quickbird (2010/01/15)",
-        "http://hypercube.telascience.org/tiles/1.0.0/quickbird-20100115-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'qb15'
-        }
-    );
-    dglobe_layers.push(qbird_011510_tc);
-    var worldview_011710_tc = new OpenLayers.Layer.XYZ(
-        "DG WorldView (2010/01/17)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldview-20100117-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false,
-            buffer:0, linkId: 'wv17'
-        }
-    );
-    dglobe_layers.push(worldview_011710_tc);
-    var qbird_011810_tc = new OpenLayers.Layer.XYZ(
-        "DG Quickbird (2010/01/18)",
-        "http://hypercube.telascience.org/tiles/1.0.0/quickbird-20100118-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'qb18'
-        }
-    );
-    dglobe_layers.push(qbird_011810_tc);
-
-    var worldview_011810_tc = new OpenLayers.Layer.XYZ(
-        "DG WorldView (2010/01/18)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldview-20100118-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wv18'
-        }
-    );
-    dglobe_layers.push(worldview_011810_tc);
-    var worldview_011910_tc = new OpenLayers.Layer.XYZ(
-        "DG WorldView (2010/01/19)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldview-20100119-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wv19'
-        }
-    );
-    dglobe_layers.push(worldview_011910_tc);
-    var qbird_012010_tc = new OpenLayers.Layer.XYZ(
-        "DG Quickbird (2010/01/20)",
-        "http://hypercube.telascience.org/tiles/1.0.0/quickbird-20100120-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'qb20'
-        }
-    );
-    dglobe_layers.push(qbird_012010_tc);
-    var worldview_012010_tc = new OpenLayers.Layer.XYZ(
-        "DG WorldView (2010/01/20)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldview-20100120-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wv20'
-        }
-    );
-    dglobe_layers.push(worldview_012010_tc);
-    map.addLayers(dglobe_layers);
-    
-    /////////////////////////////////////
-    // SPOT Image Layers
-    /////////////////////////////////////
-    var spot_layers = []
-    var spot_011410_tc = new OpenLayers.Layer.XYZ(
-        "SpotImage (2010/01/14)",
-        "http://hypercube.telascience.org/tiles/1.0.0/spot-20100114-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'spot14'
-        }
-    );
-    spot_layers.push(spot_011410_tc);
-    var spot_011510_tc = new OpenLayers.Layer.XYZ(
-        "SpotImage (2010/01/15)",
-        "http://hypercube.telascience.org/tiles/1.0.0/spot-20100115-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'spot15'
-        }
-    );
-    spot_layers.push(spot_011510_tc);
-    map.addLayers(spot_layers);
-    
+    }));    
     /////////////////////////////////////
     // High Res Aerial Image Layers
     /////////////////////////////////////
-    var hires_layers = []
-    var google_011710_tc = new OpenLayers.Layer.XYZ(
-        "Google Aerial (2010/01/17)",
-        "http://hypercube.telascience.org/tiles/1.0.0/google-20100117-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, attribution: "Google 2010", 'linkId': 'goog17'
-        }
-    );
-    hires_layers.push(google_011710_tc);
-    var noaa_011810_tc = new OpenLayers.Layer.XYZ(
-        "NOAA Aerial (2010/01/17)",
-        "http://hypercube.telascience.org/tiles/1.0.0/noaa-20100118-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'noaa17'
-        }
-    );
-    hires_layers.push(noaa_011810_tc);
-    var noaa_012010_tc = new OpenLayers.Layer.XYZ(
-        "NOAA Aerial (2010/01/21)",
-        "http://hypercube.telascience.org/tiles/1.0.0/noaa-20100120-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'noaa17'
-        }
-    );
-    hires_layers.push(noaa_012010_tc);
-    var noaa_012210_tc = new OpenLayers.Layer.XYZ(
-        "NOAA Aerial (2010/01/22)",
-        "http://hypercube.telascience.org/tiles/1.0.0/noaa-20100122-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'noaa22'
-        }
-    );
-    hires_layers.push(noaa_012210_tc);
-    var noaa_012310_tc = new OpenLayers.Layer.XYZ(
-        "NOAA Aerial (2010/01/23)",
-        "http://hypercube.telascience.org/tiles/1.0.0/noaa-20100123-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'noaa23'
-        }
-    );
-    hires_layers.push(noaa_012310_tc);
-    var worldbank_012110_tc = new OpenLayers.Layer.XYZ(
-        "Worldbank (2010/01/21-22)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldbank-21-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wb21'
-        }
-    );
-    hires_layers.push(worldbank_012110_tc);
-    var worldbank_012310_tc = new OpenLayers.Layer.XYZ(
-        "Worldbank (2010/01/23)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldbank-23-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wb23'
-        }
-    );
-    hires_layers.push(worldbank_012310_tc);
-    map.addLayers(hires_layers);
-    var worldbank_012410_tc = new OpenLayers.Layer.XYZ(
-        "Worldbank (2010/01/24)",
-        "http://hypercube.telascience.org/tiles/1.0.0/worldbank-24-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'wb24'
-        }
-    );
-    hires_layers.push(worldbank_012410_tc);
-    var noaa_012410_tc = new OpenLayers.Layer.XYZ(
-        "NOAA Aerial (2010/01/24)",
-        "http://hypercube.telascience.org/tiles/1.0.0/noaa-20100124-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'noaa24'
-        }
-    );
-    hires_layers.push(noaa_012410_tc);
-    map.addLayers(hires_layers);
-    
-    /////////////////////////////////////
-    // GeoEye Image Layers
-    /////////////////////////////////////
-    var geoeye_layers = [];
-    var ge_011310_wms = new OpenLayers.Layer.WMS(
-        "Event Imagery PAP (WMS)",
-        "http://maps.nypl.org/relief/maps/wms/32?",
-        {
-            transparent: 'TRUE',
-            'sphericalMercator': true
-        },
-        {'reproject': false, 'isBaseLayer': false, 'visibility': false, linkId: 'gepap'}
-    );
-    geoeye_layers.push(ge_011310_wms);
-    var ge_011310_tc = new OpenLayers.Layer.XYZ(
-        "Event Imagery Extended",
-        "http://maps.nypl.org/tilecache/1/geoeye/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'geevt'
-        }
-    );
-    geoeye_layers.push(ge_011310_tc);
-    var ikonos_011510_tc = new OpenLayers.Layer.XYZ(
-        "Ikonos (2010/01/14-15)",
-        "http://hypercube.telascience.org/tiles/1.0.0/geoeye-ikonos-20100115-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, attribution: "GeoEye 2010",
-            linkId: 'ik15'
-        }
-    );
-    geoeye_layers.push(ikonos_011510_tc);
-    var geoeye_011610_tc = new OpenLayers.Layer.XYZ(
-        "GeoEye1 (2010/01/16)",
-        "http://hypercube.telascience.org/tiles/1.0.0/geoeye-geoeye-20100116-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'ge16' 
-        }
-    );
-    geoeye_layers.push(geoeye_011610_tc);
-    var ikonos_011710_tc = new OpenLayers.Layer.XYZ(
-        "Ikonos (2010/01/17)",
-        "http://hypercube.telascience.org/tiles/1.0.0/geoeye-ikonos-20100117-900913/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'ik17'
-        }
-    );
-    geoeye_layers.push(ikonos_011710_tc);
-    var geoeye_011810_tc = new OpenLayers.Layer.XYZ(
-        "GeoEye1 (2010/01/18)",
-        "http://hypercube.telascience.org/tiles/1.0.0/geoeye-geoeye-20100118-900913/${z}/${x}/${y}.jpg?rand=1",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'ge18'
-        }
-    );
-    geoeye_layers.push(geoeye_011810_tc);
-    map.addLayers(geoeye_layers);
-
+    // hires_layers = [];
+    // var worldbank_012410_tc = new OpenLayers.Layer.XYZ(
+    //     "Worldbank (2010/01/24)",
+    //     "http://tiles.babylon/tilecache.cgi/1.0.0/worldbank-24-900913/${z}/${x}/${y}.jpg",
+    //     {
+    //         isBaseLayer: false, buffer:0,
+    //         visibility: false, linkId: 'wb24'
+    //     }
+    // );
+    // hires_layers.push(worldbank_012410_tc);
+    // var noaa_012410_tc = new OpenLayers.Layer.XYZ(
+    //     "NOAA Aerial (2010/01/24)",
+    //     "http://tiles.babylon/tilecache.cgi/1.0.0/noaa-20100124-900913/${z}/${x}/${y}.jpg",
+    //     {
+    //         isBaseLayer: false, buffer:0,
+    //         visibility: false, linkId: 'noaa24'
+    //     }
+    // );
+    // hires_layers.push(noaa_012410_tc);
+    // map.addLayers(hires_layers);
+    // 
 
     /////////////////////////////////////
     // Topo Layers
@@ -393,197 +154,27 @@ Ext.onReady(function() {
     /////////////////////////////////////
     var osm_layers = [];
     var osm_camps_wms = new OpenLayers.Layer.XYZ(
-        "Damage/Ref Camps",
-        "http://live.openstreetmap.nl/haiti-symbols/${z}/${x}/${y}.png",
+        "Damage/IDP Camps",
+        "tiles/refugee/${z}/${x}/${y}.png",
         {
             buffer: 0, isBaseLayer: false,
             'sphericalMercator': true,
-            visibility: false, numZoomLevels: 20,
+            visibility: false, numZoomLevels: 17,
             linkId: 'osmcamps' 
         }
     );
     osm_layers.push(osm_camps_wms); 
     var osm_overlay = new OpenLayers.Layer.XYZ(
-        "OSM Roads Overlay",
-        "http://live.openstreetmap.nl/mapnik-line/${z}/${x}/${y}.png",
+        "Roads Overlay",
+        "tiles/osm-line/${z}/${x}/${y}.png",
         {
             isBaseLayer: false, buffer:0,
-            visibility: false, numZoomLevels: 20,
+            visibility: false, numZoomLevels: 17,
             linkId: 'osmroads'
         }
     );
     osm_layers.push(osm_overlay); 
     map.addLayers(osm_layers);
-
-    /////////////////////////////////////
-    // Overlays Layers
-    /////////////////////////////////////
-    var sfc_overlays = [];
-
-    var osb = new OpenLayers.Layer.GML("OpenStreetBugs", 
-        "http://openstreetbugs.appspot.com/getGPX?l=-74.8614387&b=17.555208&r=-69.538562&t=20.432356&open=1",
-        {
-            format: OpenLayers.Format.GPX, 
-            projection: new OpenLayers.Projection("EPSG:4326"),
-            styleMap: new OpenLayers.StyleMap({'graphicHeight': 11, graphicWidth: 11,
-                                               externalGraphic: 'http://ose.petschge.de/client/open_bug_marker.png'}),
-            visibility: false, 
-            linkId: 'osb'
-        });
-    osb.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(osb);    
-    osm_layers.push(osb); 
-    
-    var ose = new OpenLayers.Layer.GML("OpenStreetEmergencies", 
-        "http://ose.petschge.de/cgi-bin/getRSSfeed?l=-74.8614387&b=17.555208&r=-69.538562&t=20.432356&open=1",
-        {format: OpenLayers.Format.GeoRSS, projection: new OpenLayers.Projection("EPSG:4326"),
-        styleMap: new OpenLayers.StyleMap({'graphicHeight': 11, graphicWidth: 11,
-        externalGraphic: 'http://ose.petschge.de/client/open_bug_marker.png'}),
-        visibility: false,
-        linkId: 'ose'
-        });
-    ose.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(ose);    
-    osm_layers.push(ose);    
-    
-    var p3_overlays = [];
-
-    var p3_je1 = new OpenLayers.Layer.Vector('P-3 - JE17JJ (2010/01/17) ', {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        styleMap: new OpenLayers.StyleMap({'fillColor': 'white',
-                                           pointRadius: 6,
-                                           opacity: 0.5,
-                                           fillOpacity: 0.8,
-                                           strokeColor: 'red',
-                                           'strokeWidth': 1}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "p3-json/p3-JE17JJ.json",
-            format: new OpenLayers.Format.GeoJSON({
-                extractStyles: true,
-                extractAttributes: true
-            })
-        }),
-        visibility: false,
-        linkId: 'p3-1',
-        'base': '/haiti/data/source/Navy/P3/JE17JJ/Images/'
-    });
-    p3_je1.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(p3_je1);
-    p3_overlays.push(p3_je1);
-    var p3_je18 = new OpenLayers.Layer.Vector('P-3 - JE18 (2010/01/18) ', {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        styleMap: new OpenLayers.StyleMap({'fillColor': 'white',
-                                           pointRadius: 6,
-                                           opacity: 0.5,
-                                           fillOpacity: 0.8,
-                                           strokeColor: 'red',
-                                           'strokeWidth': 1}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "p3-json/je18.json",
-            format: new OpenLayers.Format.GeoJSON({
-                extractStyles: true,
-                extractAttributes: true
-            })
-        }),
-        visibility: false,
-        linkId: 'p3-2',
-        'base':"/haiti/data/source/Navy/P3/JE18Photo's/"
-    });
-    p3_je18.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(p3_je18);
-    p3_overlays.push(p3_je18);
-    var p3_je19ss = new OpenLayers.Layer.Vector('P-3  (2010/01/19 ss) ', {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        styleMap: new OpenLayers.StyleMap({'fillColor': 'white',
-                                           pointRadius: 6,
-                                           opacity: 0.5,
-                                           fillOpacity: 0.8,
-                                           strokeColor: 'red',
-                                           'strokeWidth': 1}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "p3-json/je19ss.json",
-            format: new OpenLayers.Format.GeoJSON({
-                extractStyles: true,
-                extractAttributes: true
-            })
-        }),
-        visibility: false,
-        linkId: 'p3-3',
-        'base': '/haiti/data/source/Navy/P3/JE19SS/'
-    });
-    p3_je19ss.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(p3_je19ss);
-    p3_overlays.push(p3_je19ss);
-    var p3_je19 = new OpenLayers.Layer.Vector('P-3  (2010/01/19 ) ', {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        styleMap: new OpenLayers.StyleMap({'fillColor': 'white',
-                                           pointRadius: 6,
-                                           opacity: 0.5,
-                                           fillOpacity: 0.8,
-                                           strokeColor: 'red',
-                                           'strokeWidth': 1}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "p3-json/je19.json",
-            format: new OpenLayers.Format.GeoJSON({
-                extractStyles: true,
-                extractAttributes: true
-            })
-        }),
-        visibility: false,
-        linkId: 'p3-4',
-        'base': '/haiti/data/source/Navy/P3/JE19QQ/'
-    });
-    p3_je19.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(p3_je19);
-    p3_overlays.push(p3_je19);
-    var p3_je20tt = new OpenLayers.Layer.Vector('P-3  (2010/01/20 TT) ', {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        styleMap: new OpenLayers.StyleMap({'fillColor': 'white',
-                                           pointRadius: 6,
-                                           opacity: 0.5,
-                                           fillOpacity: 0.8,
-                                           strokeColor: 'red',
-                                           'strokeWidth': 1}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "p3-json/je20tt.json",
-            format: new OpenLayers.Format.GeoJSON({
-                extractStyles: true,
-                extractAttributes: true
-            })
-        }),
-        visibility: false,
-        linkId: 'p3-5',
-        'base': '/haiti/data/source/Navy/P3/JE20TT/'
-    });
-    p3_je20tt.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(p3_je20tt);
-    p3_overlays.push(p3_je20tt);
 
 
 
@@ -591,87 +182,203 @@ Ext.onReady(function() {
     /////////////////////////////////////
     // Ushahidi Overlays
     /////////////////////////////////////
-    var ushahidi_overlays = [];
-    
-    // Incidents
-    var ushahidiIncidents = new OpenLayers.Layer.Vector("Latest 100 Incidents", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.GeoRSS, 
-        styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://www.hcvb.org/Directory/Emergency_icon.gif",
-                                           pointRadius: 10}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://haiti.ushahidi.com/feed/?l=100",
-            format: new OpenLayers.Format.GeoRSS({
+    // var ushahidi_overlays = [];
+    // 
+    // // Incidents
+    // var ushahidiIncidents = new OpenLayers.Layer.Vector("Latest 100 Incidents", {
+    //     projection: map.displayProjection,
+    //     strategies: [new OpenLayers.Strategy.Fixed()],
+    //     visibility: false,
+    //     format: OpenLayers.Format.GeoRSS, 
+    //     styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://www.hcvb.org/Directory/Emergency_icon.gif",
+    //                                        pointRadius: 10}),
+    //     protocol: new OpenLayers.Protocol.HTTP({
+    //         url: "http://haiti.ushahidi.com/feed/?l=100",
+    //         format: new OpenLayers.Format.GeoRSS({
+    //             extractStyles: true, 
+    //             extractAttributes: true
+    //         })
+    //     }),
+    //     linkId: 'ushinc',
+    //     visibility: false
+    // });
+    // ushahidiIncidents.events.on({
+    //     "featureselected": onFeatureSelect,
+    //     "featureunselected": onFeatureUnselect
+    // });
+    // sfc_overlays.push(ushahidiIncidents);       
+    // ushahidi_overlays.push(ushahidiIncidents);  
+    // map.addLayers(ushahidi_overlays);
+
+
+
+    /////////////////////////////////////
+    // GeoCommons Overlays
+    /////////////////////////////////////
+    var idp_camps = [];
+
+    //Shake Map
+    var geocommonsShake = new OpenLayers.Layer.GML(
+        "Shake Map", 
+        "data/geocommons/10992.kml",
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
                 extractStyles: true, 
                 extractAttributes: true
-            })
-        }),
-        linkId: 'ushinc',
-        visibility: false
-    });
-    ushahidiIncidents.events.on({
+            },
+            linkId: 'gcshake',
+            visibility: false
+        }
+    );
+    geocommonsShake.events.on({
         "featureselected": onFeatureSelect,
         "featureunselected": onFeatureUnselect
     });
-    sfc_overlays.push(ushahidiIncidents);       
-    ushahidi_overlays.push(ushahidiIncidents);  
-    map.addLayers(ushahidi_overlays);
+    idp_camps.push(geocommonsShake);      
+    sfc_overlays.push(geocommonsShake); 
 
+    var papIDP = new OpenLayers.Layer.GML(
+        "Port-au-Prince IDP Camps (1/15/10)", "data/geocommons/pap_idp_2010_01_24.kml", 
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
+                extractStyles: true, 
+                extractAttributes: true
+            },
+            linkId: 'papIDP',
+            visibility: false
+        }
+    );
 
+    papIDP.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
+    });
+    idp_camps.push(papIDP);      
+    sfc_overlays.push(papIDP);  
+    
+    var carrefourIDP = new OpenLayers.Layer.GML(
+        "Carrefour IDP Camps (1/15/10)", "data/geocommons/carrefour_idp_2010_01_15.kml", 
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
+                extractStyles: true, 
+                extractAttributes: true
+            },
+            linkId: 'carrefourIDP',
+            visibility: false
+        }
+    );
 
+    carrefourIDP.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
+    });
+    idp_camps.push(carrefourIDP);      
+    sfc_overlays.push(carrefourIDP);  
+    
+    var refugeeCamps = new OpenLayers.Layer.GML(
+        "IDP Camps from OSM (1/18-29/10)", "data/geocommons/301.kml", 
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
+                extractStyles: true, 
+                extractAttributes: true
+            },
+            linkId: 'refugeeCamps',
+            visibility: false
+        }
+    );
+
+    refugeeCamps.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
+    });
+    idp_camps.push(refugeeCamps);      
+    sfc_overlays.push(refugeeCamps);      
+              
     /////////////////////////////////////
     // Sahana Overlays
     /////////////////////////////////////
-    var sahana_overlays = [];
+    var response_locations = [];
 
-    //Hospitals
-    var sahanaHospitals = new OpenLayers.Layer.Vector("Hospitals", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://haiti.sahanafoundation.org/prod/default/download/gis_marker.image.E_Med_Hospital_S1.png", pointRadius: 10}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://haiti.sahanafoundation.org/prod/hms/hospital.kml",
-            format: new OpenLayers.Format.KML({
+
+    //Medical Centers
+    var geocommonsMedical = new OpenLayers.Layer.GML(
+        "Medical Centers (GeoCommons)", "data/geocommons/302.kml", 
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
                 extractStyles: true, 
                 extractAttributes: true
-            })
-        }),
-        linkId: 'sahhosp',
-        visibility: false
+            },
+            linkId: 'gcmedical',
+            visibility: false
+        }
+    );
+
+    geocommonsMedical.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
     });
+    response_locations.push(geocommonsMedical);      
+    sfc_overlays.push(geocommonsMedical);    
+    
+    //Hospitals
+    var sahanaHospitals = new OpenLayers.Layer.GML(
+        "Hospitals (Sahana)", 
+        "data/sahana_hospital.kml", 
+        {
+            projection: map.displayProjection,
+            visibility: false,
+            format: OpenLayers.Format.KML, 
+            styleMap: new OpenLayers.StyleMap({'externalGraphic': "images/markers/gis_marker.image.E_Med_Hospital_S1.png", pointRadius: 10}),
+            formatOptions: {
+                extractStyles: true, 
+                extractAttributes: true
+            },
+            linkId: 'sahhosp',
+        }
+    );
     sahanaHospitals.events.on({
         "featureselected": onFeatureSelect,
         "featureunselected": onFeatureUnselect
     });
-    sahana_overlays.push(sahanaHospitals);      
+    response_locations.push(sahanaHospitals);      
     sfc_overlays.push(sahanaHospitals); 
     
     //Offices
-    var sahanaOffices = new OpenLayers.Layer.Vector("Offices", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://haiti.sahanafoundation.org/prod/default/download/gis_marker.image.Emergency_Operations_Center_S1.png", pointRadius: 10}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://haiti.sahanafoundation.org/prod/gis/location.kml?feature_class=Office",
-            format: new OpenLayers.Format.KML({
+    var sahanaOffices = new OpenLayers.Layer.GML(
+        "Offices", 
+        "data/sahana_office.kml", 
+        {
+            projection: map.displayProjection,
+            visibility: false,
+            format: OpenLayers.Format.KML, 
+            styleMap: new OpenLayers.StyleMap({'externalGraphic': "images/markers/gis_marker.image.Emergency_Operations_Center_S1.png", pointRadius: 10}),
+            formatOptions: {
                 extractStyles: true, 
                 extractAttributes: true
-            })
-        }),
-        linkId: 'sahoff',
-        visibility: false
-    });
+            },
+            linkId: 'sahoff',
+        }
+    );
     sahanaOffices.events.on({
         "featureselected": onFeatureSelect,
         "featureunselected": onFeatureUnselect
     });
-    sahana_overlays.push(sahanaOffices);        
+    response_locations.push(sahanaOffices);        
     sfc_overlays.push(sahanaOffices);   
 
     //Food Distribution Centers
@@ -699,9 +406,8 @@ Ext.onReady(function() {
     sfc_overlays.push(foodDistributionCenters); 
     overlays.push(foodDistributionCenters);    */ 
 
-    map.addLayers(p3_overlays);
-    map.addLayers(sahana_overlays);
-
+    map.addLayers(response_locations);
+    map.addLayers(idp_camps);
     /////////////////////////////////////
     // InRelief Overlays
     /////////////////////////////////////
@@ -777,30 +483,30 @@ Ext.onReady(function() {
     map.addLayers(inrelief_overlays);
     */
 
-    drawing_layers = [];
-    var params = OpenLayers.Util.getParameters();
-    var editingLayer;
-    if (params.editlayers) {
-        var editId = params.editlayers.split(",")[0];
-        editingLayer = new OpenLayers.Layer.GML("Local Layer " + editId, 
-            "http://cmapdemo.labs.metacarta.com/featurestore/layer/" + editId,
-            {'remote_id': parseInt(editId), format: OpenLayers.Format.GeoJSON, editLayer: true, projection: new OpenLayers.Projection("EPSG:4326"), visibility: false}
-        );
-    } else {   
-        editingLayer = new OpenLayers.Layer.Vector("Local Layer", {'editLayer': true});
-    }
-    HAITI.editingLayer = editingLayer;
-    drawing_layers.push(editingLayer);
-    editingLayer.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(editingLayer);
-    map.addLayers(drawing_layers);
+    // drawing_layers = [];
+    // var params = OpenLayers.Util.getParameters();
+    // var editingLayer;
+    // if (params.editlayers) {
+    //     var editId = params.editlayers.split(",")[0];
+    //     editingLayer = new OpenLayers.Layer.GML("Local Layer " + editId, 
+    //         "http://cmapdemo.labs.metacarta.com/featurestore/layer/" + editId,
+    //         {'remote_id': parseInt(editId), format: OpenLayers.Format.GeoJSON, editLayer: true, projection: new OpenLayers.Projection("EPSG:4326"), visibility: false}
+    //     );
+    // } else {   
+    //     editingLayer = new OpenLayers.Layer.Vector("Local Layer", {'editLayer': true});
+    // }
+    // HAITI.editingLayer = editingLayer;
+    // drawing_layers.push(editingLayer);
+    // editingLayer.events.on({
+    //     "featureselected": onFeatureSelect,
+    //     "featureunselected": onFeatureUnselect
+    // });
+    // sfc_overlays.push(editingLayer);
+    // map.addLayers(drawing_layers);
 
 
 
-    var sf = new OpenLayers.Control.SelectFeature(sfc_overlays);
+    var sf = new OpenLayers.Control.SelectFeature(sfc_overlays, {clickOut: true});
     map.addControl(sf);
     sf.activate();
     HAITI.sfc = sf;
@@ -850,29 +556,30 @@ Ext.onReady(function() {
     /////////////////////////////////////
 
     // This actually determines the order of the groups
-    layer_groups.push({name:'OSM Overlays', layers:osm_layers,
+    layer_groups.push({name:'Infrastructure', layers:osm_layers,
                        expanded:true});
-    layer_groups.push({name:'Image Overlays', layers:image_overlays,
+    // layer_groups.push({name:'Image Overlays', layers:image_overlays,
+    //                    expanded:true});
+    // layer_groups.push({name:'Ushahidi Overlays', layers:ushahidi_overlays,
+    //                    expanded:true});
+    layer_groups.push({name:'IDP Camps', layers:idp_camps,
                        expanded:true});
-    layer_groups.push({name:'Ushahidi Overlays', layers:ushahidi_overlays,
+    layer_groups.push({name:'Response Locations', layers:response_locations,
                        expanded:true});
-    layer_groups.push({name:'Sahana Overlays', layers:sahana_overlays,
-                       expanded:true});
-    layer_groups.push({name:'Drone-style Overlays', layers:p3_overlays,
-                       expanded:false});
-    layer_groups.push({name:'Topo Maps', layers:topo_layers,
-                       expanded:false});
-    layer_groups.push({name:'Hi Res Aerials Image', layers:hires_layers,
-                       expanded:false});
-    layer_groups.push({name:'Digital Globe', layers:dglobe_layers,
-                       expanded:false});
-    layer_groups.push({name:'GeoEye', layers:geoeye_layers,
-                       expanded:false});
-    layer_groups.push({name:'CNES/SpotImage', layers:spot_layers,
-                       expanded:false});
+    // layer_groups.push({name:'Drone-style Overlays', layers:p3_overlays,
+    //                    expanded:false});
+    // layer_groups.push({name:'Topo Maps', layers:topo_layers,
+    //                    expanded:false});
+    // layer_groups.push({name:'Hi Res Aerials Image', layers:hires_layers,expanded:false});
+    // layer_groups.push({name:'Digital Globe', layers:dglobe_layers,
+    //                    expanded:false});
+    // layer_groups.push({name:'GeoEye', layers:geoeye_layers,
+    //                    expanded:false});
+    // layer_groups.push({name:'CNES/SpotImage', layers:spot_layers,
+    //                    expanded:false});
     /*layer_groups.push({name:'InRelief Overlays', layers:inrelief_overlays,
                        expanded:false});*/
-    layer_groups.push({'name': "Local Drawing Layers", layers: drawing_layers, expanded: false});
+    // layer_groups.push({'name': "Local Drawing Layers", layers: drawing_layers, expanded: false});
     for (var p=0; p<layer_groups.length; p+=1){
         var my_layers = layer_groups[p]["layers"];
         var my_store = new GeoExt.data.LayerStore({
@@ -917,17 +624,7 @@ Ext.onReady(function() {
             e.layer.moveTo(e.layer.map.getCenter(), e.layer.map.getZoom());
         }
     });
-    var edit = new GeoExt.Action({
-        text: "Edit Layer",
-        control: new H.Edit({layer:editingLayer}),
-        map: map,
-        // button options
-        toggleGroup: "draw",
-        allowDepress: false,
-        tooltip: "Draw Custom Layer",
-        // check item options
-        group: "draw"
-    });
+
     var show_loc = new GeoExt.Action({
         text: "Click to Show Location",
         control: showLoc,
@@ -937,41 +634,9 @@ Ext.onReady(function() {
         tooltip: "Click map to show location in Decimal degrees + DDMMSS",
         group: "draw"
     });
-    var street_query = new GeoExt.Action({
-        text: "Gazetteer By Grid",
-        control: streetQuery,
-        map: map,
-        toggleGroup: "draw",
-        allowDepress: false,
-        tooltip: "Click map to query street objects in that MGRS grid",
-        group: "draw"
-    });
-    var action = new GeoExt.Action({
-        text: "MGRS PDFs",
-        control: selectPdfControl,
-        map: map,
-        // button options
-        toggleGroup: "draw",
-        allowDepress: false,
-        tooltip: "Select Delta State MGRS Pdfs",
-        // check item options
-        group: "draw"
-    });
-    var nav = new GeoExt.Action({
-        text: "Navigate Map",
-        control: new OpenLayers.Control.Navigation(),
-        map: map,
-        // button options
-        toggleGroup: "draw",
-        allowDepress: false,
-        pressed: true,
-        tooltip: "navigate",
-        // check item options
-        group: "draw",
-        checked: true
-    });
 
-    toolbarItems = [nav, action, street_query, show_loc, edit];
+
+    toolbarItems = [show_loc];
     var mapPanel = new GeoExt.MapPanel({
         renderTo: 'mappanel',
         map: map,
@@ -982,7 +647,6 @@ Ext.onReady(function() {
     map.addControl(new H.ArgParser());
     HAITI.link = new H.Permalink();
     map.addControl(HAITI.link);
-    map.addControl(new H.Permalink(null, 'http://openstreetmap.org/edit?tileurl=http://hypercube.telascience.org/tiles/1.0.0/haiti-best-900913/!/!/!.jpg&', {'displayClass': 'editLink', 'text': "Edit in OSM"}));
 
     var layerTree = new Ext.tree.TreePanel({
         title: 'Map Layers',
@@ -1045,57 +709,15 @@ Ext.onReady(function() {
         layoutConfig:{
             animate: true
         },
-        tbar:[
-            {xtype: 'tbfill'},
-            {
-                id:'btn_oldmap',
-                text: 'Old UAV Map',
-                tooltip: 'Open new window with old UAV map',
-                minWidth:30,
-                listeners: {
-                    'click' : {
-                        fn: function(){
-                            window.open("uav-old.html");
-                        },
-                        scope: this
-                    }
-                }},{
-                    xtype: 'tbseparator'
-                },{
-                    id:'btn_layerlist',
-                    text: 'Layer List',
-                    tooltip: 'Open new window with layer list',
-                    minWidth:30,
-                    listeners: {
-                        'click' : {
-                            fn: function(){
-                                window.open("layers.html");
-                            },
-                            scope: this
-                        }
-                    }
-                },{
-                    xtype: 'tbseparator'
-                },{
-                    id:'btn_contributers',
-                    text: 'Contributers',
-                    tooltip: '',
-                    minWidth:30,
-                    listeners: {
-                        'click' : {
-                            fn: function(){
-                                contrib_window.show();
-                            },
-                            scope: this
-                        }               
-                    }}],
+
         items: [
+            ltPanel,
             {
                 contentEl: 'address_div',
-                title: "Tools",
-                region: "north",
+                title: "Contributors",
+                region: "south",
                 border:false
-            }, ltPanel
+            }, 
         ]
     });
 
@@ -1112,9 +734,9 @@ Ext.onReady(function() {
             items: [mapPanel]
         }, west]
     });
-    Ext.DomHelper.append(Ext.get('title'),
-                         {tag: 'img', id: 'title_logo',src: 'images/haiti_logo_telascience.png', height: 58});
-    editingLayer.setVisibility(true);
+    // Ext.DomHelper.append(Ext.get('title'),
+    //     {tag: 'img', id: 'title_logo',src: 'images/haiti_logo_telascience.png', height: 58});
+
     setMapCenter();
 
 });

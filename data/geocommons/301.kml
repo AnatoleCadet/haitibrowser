@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Latest Campsites in Haiti from GeoFabrik Reports, 01/18-29/ 2010</name>
+    <description>This map displays campsites from GeoFabrik reports in Haiti for the dates of 1.18.2010, 1.19.2010, and 1.20.2010. Look for updates hopefully on a daily basis when they become available</description>
+    <atom:author>
+        <atom:name>kevin</atom:name>
+    </atom:author>
+    <atom:link href="data/geocommons/301" />   
+     
+        <NetworkLink>
+        <name><![CDATA[Campsites - ]]></name>
+        <Link>
+            <href>data/geocommons/301/overlays/0.kml?timestamp=MjAxMC0wMS0yOSAyMjo0NjoyNSBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Campsites - ]]></name>
+        <Link>
+            <href>data/geocommons/301/overlays/1.kml?timestamp=MjAxMC0wMS0yOSAyMjo0NjoyNSBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Campsites - ]]></name>
+        <Link>
+            <href>data/geocommons/301/overlays/2.kml?timestamp=MjAxMC0wMS0yOSAyMjo0NjoyNSBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Campsites - ]]></name>
+        <Link>
+            <href>data/geocommons/301/overlays/3.kml?timestamp=MjAxMC0wMS0yOSAyMjo0NjoyNSBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+      </Document>
+</kml>

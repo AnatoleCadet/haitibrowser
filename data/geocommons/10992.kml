@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Population and Shake Map, Haiti Quake Jan 2010</name>
+    <description>This is a shake map from USGS and a population grid for Haiti from the latest quake in the Haiti Region. </description>
+    <atom:author>
+        <atom:name>Margot</atom:name>
+    </atom:author>
+    <atom:link href="http://maker.geocommons.com/maps/10992" />   
+     
+        <NetworkLink>
+        <name><![CDATA[Shakemap us2010rja6, USGS, Haiti - Value]]></name>
+        <Link>
+            <href>data/geocommons/10992/overlays/0.kml</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Population Grid, Haiti, 2010 - Gridcode]]></name>
+        <Link>
+            <href>data/geocommons/10992/overlays/1.kml</href>
+        </Link>
+    </NetworkLink>
+      </Document>
+</kml>

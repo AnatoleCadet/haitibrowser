@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name><![CDATA[Campsites]]></name>
+	
+          <Style id='default'>
+            <PolyStyle>
+              <color>ffc2d9eb</color>
+              <fill>1</fill>
+              <outline>1</outline>
+            </PolyStyle>
+            <LineStyle>
+              <color>ff75a9d1</color>
+              <width>2</width>
+            </LineStyle>
+            <IconStyle>
+              <color>ffc2d9eb</color> 
+              <scale>0.7</scale>
+              <Icon>
+                <href>http://maker.news.geocommons.com/images/icons/outlineCircle.png</href>
+              </Icon>
+              
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+    
+            </IconStyle>
+            <BalloonStyle>
+            <text><![CDATA[<p><b>name:</b> $[name]<br/><b>osm_id:</b> $[osm_id]<br/><b>type:</b> $[type]<br/></p><p><a href="http://maker.news.geocommons.com/maps/301">View the map in Maker<i>!</i></p>]]></text>
+            </BalloonStyle>
+          </Style>
+        
+    
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[613944766.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3468117,18.5259859</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[613944769.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3461364,18.5263551</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614368615.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3991287,18.5242366</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614374843.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4170016,18.5303925</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376380.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3325249,18.5390369</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376585.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3211263,18.543711</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376587.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3225546,18.5440463</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376592.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3137215,18.5411403</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376840.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4134924,18.5451712</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614376844.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4143921,18.5510592</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377159.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3405286,18.5496302</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377332.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3383327,18.5628994</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377359.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3297046,18.550298</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377387.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3235602,18.5461609</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377389.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3253263,18.5451091</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377406.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3249174,18.5482892</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377460.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3211986,18.5454813</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377473.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3339743,18.556654</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377474.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3281916,18.5602955</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377476.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3309191,18.5603518</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377477.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3320129,18.5605678</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614377595.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2313834,18.5772494</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614394453.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.304104,18.5439789</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614394454.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3041161,18.543731</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614394455.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3044741,18.5438302</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614394456.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3043977,18.544059</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614502592.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3367106,18.5250194</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614515566.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3486007,18.5197284</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614556757.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4198012,18.5430912</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614556777.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4206327,18.5441745</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614870653.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3067597,18.528673</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614958115.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2672737,18.5078195</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[614961246.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2723407,18.5106719</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[615073606.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2856066,18.5029164</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[616055252.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3264339,18.5231299</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+                
+                
+                <Data name='osm_id'>
+                  <displayName><![CDATA[osm_id]]></displayName>
+                  <value><![CDATA[616224446.0]]></value>
+                </Data>
+              
+                
+                
+                <Data name='type'>
+                  <displayName><![CDATA[type]]></displayName>
+                  <value><![CDATA[camp_site]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2874951,18.5964669</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+</Document>
+</kml>

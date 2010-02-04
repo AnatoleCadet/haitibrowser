@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name><![CDATA[Carrefour 1/15/2010]]></name>
+	
+          <Style id='default'>
+            <PolyStyle>
+              <color>ffb57121</color>
+              <fill>1</fill>
+              <outline>1</outline>
+            </PolyStyle>
+            <LineStyle>
+              <color>ff5e3b11</color>
+              <width>2</width>
+            </LineStyle>
+            <IconStyle>
+              <color>ffb57121</color> 
+              <scale>1</scale>
+              <Icon>
+                <href>http://maker.news.geocommons.com/images/icons/ringIcon.png</href>
+              </Icon>
+              
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+    
+            </IconStyle>
+            <BalloonStyle>
+            <text><![CDATA[<p><b>name:</b> $[name]<br/></p><p><a href="http://maker.news.geocommons.com/maps/297">View the map in Maker<i>!</i></p>]]></text>
+            </BalloonStyle>
+          </Style>
+        
+    
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4093633727407,18.5493623003879</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4083992860983,18.5487410001073</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4077994099652,18.5482910930075</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3664640069037,18.534278395767</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3923475777742,18.5353496031474</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3926689399883,18.5356066929187</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3926689399883,18.5364636588231</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3916405809031,18.5395487360788</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3912763703937,18.5410912747067</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3934187851546,18.5411341230019</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4004490369693,18.5439406863387</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.401455971907,18.5458260113283</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4053123184766,18.5374491696131</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4106255070837,18.5349853926381</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.411482472988,18.5347497270144</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4068334329568,18.5416911508397</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4229475272,18.5352210582618</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4310672791439,18.5405342468688</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4342837368342,18.5363351139374</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4200550521092,18.5311675809744</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4049906988346,18.5286823798517</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4048193056537,18.5293465284276</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4005130519843,18.5264971167956</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3990562099468,18.5243975503299</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3972565815477,18.5230478290305</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.4019056215789,18.5233906153923</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3880410666768,18.5224479528975</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3847631720926,18.5271612653715</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.38424899255,18.5270112963382</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3833277542028,18.5262400270243</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3810567945563,18.5282538968996</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3779717173006,18.5215695628455</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3650927961392,18.5250402747582</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3676208455571,18.5250616989058</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3677065421475,18.521376745517</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[]]></name>
+						  <description><![CDATA[ - ]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[]]></value>
+				</Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3716485853076,18.5200912966605</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+</Document>
+</kml>

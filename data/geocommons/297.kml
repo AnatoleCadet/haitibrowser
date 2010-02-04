@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Informal IDP Concentrations, Port-au-Prince & Carrefour,01/14-15/2010</name>
+    <description>This map was derived from a map made available on Reliefweb's website. The map was created by UNOSAT and locates satellite-identified concentrations of IDP (Internally displaced persons) along with other information to aid relief workers in the aftermath of the earthquake in January of 2010. </description>
+    <atom:author>
+        <atom:name>kevin</atom:name>
+    </atom:author>
+    <atom:link href="http://maker.news.geocommons.com/maps/297" />   
+     
+        <NetworkLink>
+        <name><![CDATA[Carrefour 1/15/2010 - ]]></name>
+        <Link>
+            <href>http://maker.news.geocommons.com/maps/297/overlays/0.kmz?timestamp=MjAxMC0wMS0yOSAyMjo0ODo0MyBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+        <NetworkLink>
+        <name><![CDATA[Port-Au-Prince 1/14/2010 - ]]></name>
+        <Link>
+            <href>http://maker.news.geocommons.com/maps/297/overlays/1.kmz?timestamp=MjAxMC0wMS0yOSAyMjo0ODo0MyBVVEM%3D</href>
+        </Link>
+    </NetworkLink>
+      </Document>
+</kml>

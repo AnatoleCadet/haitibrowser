@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Folder>
+      <name>SahanaPy GIS Features</name>
+      <Placemark>
+        <name>Hatien Red Cross</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/52</description>
+        <Point>
+          <coordinates>-72.205056,18.325941</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oxfam Port au Prince office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/89</description>
+        <Point>
+          <coordinates>-72.3104833333,18.5357833333</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Catholic Relief Services Haiti Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1080</description>
+        <Point>
+          <coordinates>-72.2897,18.53283</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHF International Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1081</description>
+        <Point>
+          <coordinates>-72.2712616667,18.516</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>World Vision Haiti Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1641</description>
+        <Point>
+          <coordinates>-72.3030555556,18.5175</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Action Aid Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1642</description>
+        <Point>
+          <coordinates>-72.29791671,18.534367383</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Concern Worldwide</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1654</description>
+        <Point>
+          <coordinates>-72.282767,18.511203</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CARE</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1658</description>
+        <Point>
+          <coordinates>-72.285214,18.508265</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Save the Children Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1663</description>
+        <Point>
+          <coordinates>-72.292278,18.526166</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHF Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1699</description>
+        <Point>
+          <coordinates>-72.271334,18.516028</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oxfam GB Office Port-Au-Prince (New)</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1844</description>
+        <Point>
+          <coordinates>-72.29967,18.53032</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SOS Childrens Village Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1994</description>
+        <Point>
+          <coordinates>-72.2503260001,18.595374</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plan Haiti</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1995</description>
+        <Point>
+          <coordinates>-72.2957270013,18.5300939989</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Profamil office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1996</description>
+        <Point>
+          <coordinates>-72.3016300001,18.56752</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IRC Office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1997</description>
+        <Point>
+          <coordinates>-72.256184,18.542226</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Merlin office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1998</description>
+        <Point>
+          <coordinates>-72.29356,18.56036</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Relief International office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/1999</description>
+        <Point>
+          <coordinates>-72.3665086111,18.5265083333</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>International Rescue Committee office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/2000</description>
+        <Point>
+          <coordinates>-72.256184,18.542226</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHF field office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/2001</description>
+        <Point>
+          <coordinates>-72.28964,18.529841</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jhpiego office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/2002</description>
+        <Point>
+          <coordinates>-72.2933333333,18.5163888</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>German Red Cross office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/2004</description>
+        <Point>
+          <coordinates>-72.29039,18.53252</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mercy Corps office</name>
+        <description>http://haiti.sahanafoundation.org/prod/gis/location/2005</description>
+        <Point>
+          <coordinates>-72.2565500007,18.5247833329</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

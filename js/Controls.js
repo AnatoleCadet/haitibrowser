@@ -17,9 +17,7 @@
                     "<input type='hidden' name='entry_3' value='" + lonlat.lat.toFixed(5) + " " + lonlat.lon.toFixed(5) +"' />" +
                     '<input type="hidden" name="entry_5" value="' + dms[0] + ' ' + dms[1] + '" />' +
                      '<input type="hidden" name="entry_6" value="' + dms[0] + '" />' +
-                    '<input type="hidden" name="entry_7" value="' + dms[1] + '" />' +
-                    " <br />" + 
-                    "<input type='submit' value='Save to Ushahidi Spreadsheet' /></form><br />MGRS: " + mgrs + "<br /> No DMS Yet <br />BBOX: " + bbox.toBBOX()+"<br />",
+                    '<input type="hidden" name="entry_7" value="' + dms[1] + '" />',
                 'width': 500,
                 'height': 200,
                 'title': 'Save Location'

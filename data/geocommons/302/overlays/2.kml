@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name><![CDATA[Port Au Prince Hospitals]]></name>
+	
+          <Style id='default'>
+            <PolyStyle>
+              <color>ff40485e</color>
+              <fill>1</fill>
+              <outline>1</outline>
+            </PolyStyle>
+            <LineStyle>
+              <color>ff333333</color>
+              <width>2</width>
+            </LineStyle>
+            <IconStyle>
+              <color>ff40485e</color> 
+              <scale>1</scale>
+              <Icon>
+                <href>images/markers/circle.png</href>
+              </Icon>
+              
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+    
+            </IconStyle>
+            <BalloonStyle>
+            <text><![CDATA[<p><b>Name:</b> $[NAME]<br/><b>Type:</b> $[TYPE]<br/></p><p><a href="http://maker.news.geocommons.com/maps/302">View the map in Maker<i>!</i></p>]]></text>
+            </BalloonStyle>
+          </Style>
+        
+    
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Centro Maternal]]></name>			
+									  <description><![CDATA[ - Centro Maternal]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Centro Maternal]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Centro Maternal]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3357915249999,18.5640558520001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Adventista]]></name>			
+									  <description><![CDATA[ - Hospital Adventista]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Adventista]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Adventista]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3857972589999,18.5260857310001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Canape-Vert]]></name>			
+									  <description><![CDATA[ - Hospital Canape-Vert]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Canape-Vert]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Canape-Vert]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3179415019999,18.5339822510001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Caritas]]></name>			
+									  <description><![CDATA[ - Hospital Caritas]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Caritas]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Caritas]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3232340529999,18.5698798880001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Da Cruz Vermelha]]></name>			
+									  <description><![CDATA[ - Hospital Da Cruz Vermelha]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Da Cruz Vermelha]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Da Cruz Vermelha]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3286909669999,18.5735584290001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital De La Comunidade Haitiene]]></name>			
+									  <description><![CDATA[ - Hospital De La Comunidade Haitiene]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital De La Comunidade Haitiene]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital De La Comunidade Haitiene]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2722263219999,18.5236455720001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital De Seg Trab E Maternidade Ofatma]]></name>			
+									  <description><![CDATA[ - Hospital De Seg Trab E Maternidade Ofatma]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital De Seg Trab E Maternidade Ofatma]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital De Seg Trab E Maternidade Ofatma]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3250799139999,18.5668194070001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Francais]]></name>			
+									  <description><![CDATA[ - Hospital Francais]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Francais]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Francais]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3444797739999,18.5387224730001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Infantil Das Gracas]]></name>			
+									  <description><![CDATA[ - Hospital Infantil Das Gracas]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Infantil Das Gracas]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Infantil Das Gracas]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3019433299999,18.559287586</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Medecins Sans Frontieres]]></name>			
+									  <description><![CDATA[ - Hospital Medecins Sans Frontieres]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Medecins Sans Frontieres]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Medecins Sans Frontieres]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3246429089999,18.5564099420001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Medicos Sem Fronteiras]]></name>			
+									  <description><![CDATA[ - Hospital Medicos Sem Fronteiras]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Medicos Sem Fronteiras]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Medicos Sem Fronteiras]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3283242879999,18.5740105190001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Medicos Sem Fronteiras]]></name>			
+									  <description><![CDATA[ - Hospital Medicos Sem Fronteiras]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Medicos Sem Fronteiras]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Medicos Sem Fronteiras]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3271306509999,18.58136734</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Pediatrico Espoir]]></name>			
+									  <description><![CDATA[ - Hospital Pediatrico Espoir]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Pediatrico Espoir]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Pediatrico Espoir]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2828370349999,18.5400609500001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Saint Francois De Sales]]></name>			
+									  <description><![CDATA[ - Hospital Saint Francois De Sales]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Saint Francois De Sales]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Saint Francois De Sales]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3443980849999,18.5376231330001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital St Charbel]]></name>			
+									  <description><![CDATA[ - Hospital St Charbel]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital St Charbel]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital St Charbel]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3047182109999,18.5466948820001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital St Joseph]]></name>			
+									  <description><![CDATA[ - Hospital St Joseph]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital St Joseph]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital St Joseph]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3275386209999,18.5366321990001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Universitario]]></name>			
+									  <description><![CDATA[ - Hospital Universitario]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Universitario]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Universitario]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3405961119999,18.5388560660001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital Universitario De La paiz]]></name>			
+									  <description><![CDATA[ - Hospital Universitario De La paiz]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital Universitario De La paiz]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital Universitario De La paiz]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2978237529999,18.5402760760001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Hospital of Peace, Delmas 33]]></name>			
+									  <description><![CDATA[ - Hospital of Peace, Delmas 33]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Hospital of Peace, Delmas 33]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Hospital of Peace, Delmas 33]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2980473579999,18.5568366400001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Laboratorio Radiologico]]></name>			
+									  <description><![CDATA[ - Laboratorio Radiologico]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Laboratorio Radiologico]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Laboratorio Radiologico]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3387088789999,18.5396452670001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medical Center]]></name>			
+									  <description><![CDATA[ - Medical Center]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medical Center]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medical Center]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3481545759999,18.5350716450001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medical Center]]></name>			
+									  <description><![CDATA[ - Medical Center]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medical Center]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medical Center]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3419012779999,18.5604265840001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medical Center]]></name>			
+									  <description><![CDATA[ - Medical Center]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medical Center]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medical Center]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.2892874469999,18.5167191890001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medical Center]]></name>			
+									  <description><![CDATA[ - Medical Center]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medical Center]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medical Center]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3398147339999,18.548107465</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medical Center]]></name>			
+									  <description><![CDATA[ - Medical Center]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medical Center]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medical Center]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3425976319999,18.5349307660001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medicos Sem Fronteira]]></name>			
+									  <description><![CDATA[ - Medicos Sem Fronteira]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medicos Sem Fronteira]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medicos Sem Fronteira]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3077682179999,18.5352561230001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Medicos Sem Fronteira]]></name>			
+									  <description><![CDATA[ - Medicos Sem Fronteira]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Medicos Sem Fronteira]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Medicos Sem Fronteira]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3365918129999,18.5781288110001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+		<Placemark>
+		          <styleUrl>#default</styleUrl>
+      						  <name><![CDATA[Sanatorio Anti-tuberculose]]></name>			
+									  <description><![CDATA[ - Sanatorio Anti-tuberculose]]></description>			
+												<ExtendedData>
+				<Data name='selected_attribute'>
+					<displayName><![CDATA[]]></displayName>
+					<value><![CDATA[Sanatorio Anti-tuberculose]]></value>
+				</Data>
+              
+                
+                
+                <Data name='NAME'>
+                  <displayName><![CDATA[Name]]></displayName>
+                  <value><![CDATA[Sanatorio Anti-tuberculose]]></value>
+                </Data>
+              
+                
+                
+                <Data name='TYPE'>
+                  <displayName><![CDATA[Type]]></displayName>
+                  <value><![CDATA[Hospital]]></value>
+                </Data>
+              
+		    </ExtendedData>
+			
+			
+			<!-- Support older versions of GoogleEarth that don't show balloon on non-point features -->
+			<MultiGeometry>
+				
+            	
+              		<Point>
+<coordinates>-72.3440137929999,18.5264958270001</coordinates>
+</Point>
+
+				
+			</MultiGeometry>
+		</Placemark>
+	
+</Document>
+</kml>
