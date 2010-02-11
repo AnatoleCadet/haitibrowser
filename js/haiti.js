@@ -43,20 +43,6 @@ Ext.onReady(function() {
     });
     var layer_groups = [];
     var sfc_overlays = [];
-    /////////////////////////////////////
-    // OSM Base Layers
-    /////////////////////////////////////
-    // var OSM_mapnik = new OpenLayers.Layer.XYZ(
-    //     "OpenStreetMap (Haiti) local", 
-    //     "tiles/osm/${z}/${x}/${y}.png",
-    //     {
-    //         type: 'png', getURL: osm_getTileURL,
-    //         displayOutsideMaxExtent: true,
-    //         attribution: '<a href="http://www.openstreetmap.org/">' +
-    //             'OpenStreetMap</a>',
-    //         buffer: 0, linkId: 'osm'    
-    //     }
-    // );
 
     var OSM_local = new OpenLayers.Layer.XYZ(
         "OpenStreetMap (Haiti) local",
@@ -68,7 +54,7 @@ Ext.onReady(function() {
         }
     );    
     map.addLayers([OSM_local]);
-       
+
     var haiti_best = new OpenLayers.Layer.XYZ("Satellite/Aerial Imagery",
         "tiles/haiti-best-900913/${z}/${x}/${y}.jpeg",
         {
@@ -79,51 +65,12 @@ Ext.onReady(function() {
     );
     map.addLayer(haiti_best);
 
-
-    // var OSM_mapnik = new OpenLayers.Layer.TMS(
-    //     "OpenStreetMap (Haiti)",
-    //     "http://live.openstreetmap.nl/haiti/",
-    //     {
-    //         type: 'png', getURL: osm_getTileURL,
-    //         displayOutsideMaxExtent: true,
-    //         attribution: '<a href="http://www.openstreetmap.org/">' +
-    //             'OpenStreetMap</a>',
-    //         buffer: 0, linkId: 'osm'    
-    //     }
-    // );
-    // map.addLayers([OSM_mapnik]);    
-    // 
-    // Layer root container
     layerRoot.appendChild(new GeoExt.tree.BaseLayerContainer({
         text: "Base Layers",
         map: map,
         draggable:false,
         expanded: true
     }));    
-    /////////////////////////////////////
-    // High Res Aerial Image Layers
-    /////////////////////////////////////
-    // hires_layers = [];
-    // var worldbank_012410_tc = new OpenLayers.Layer.XYZ(
-    //     "Worldbank (2010/01/24)",
-    //     "http://tiles.babylon/tilecache.cgi/1.0.0/worldbank-24-900913/${z}/${x}/${y}.jpg",
-    //     {
-    //         isBaseLayer: false, buffer:0,
-    //         visibility: false, linkId: 'wb24'
-    //     }
-    // );
-    // hires_layers.push(worldbank_012410_tc);
-    // var noaa_012410_tc = new OpenLayers.Layer.XYZ(
-    //     "NOAA Aerial (2010/01/24)",
-    //     "http://tiles.babylon/tilecache.cgi/1.0.0/noaa-20100124-900913/${z}/${x}/${y}.jpg",
-    //     {
-    //         isBaseLayer: false, buffer:0,
-    //         visibility: false, linkId: 'noaa24'
-    //     }
-    // );
-    // hires_layers.push(noaa_012410_tc);
-    // map.addLayers(hires_layers);
-    // 
 
     /////////////////////////////////////
     // Topo Layers
@@ -175,42 +122,6 @@ Ext.onReady(function() {
     );
     osm_layers.push(osm_overlay); 
     map.addLayers(osm_layers);
-
-
-
-
-    /////////////////////////////////////
-    // Ushahidi Overlays
-    /////////////////////////////////////
-    // var ushahidi_overlays = [];
-    // 
-    // // Incidents
-    // var ushahidiIncidents = new OpenLayers.Layer.Vector("Latest 100 Incidents", {
-    //     projection: map.displayProjection,
-    //     strategies: [new OpenLayers.Strategy.Fixed()],
-    //     visibility: false,
-    //     format: OpenLayers.Format.GeoRSS, 
-    //     styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://www.hcvb.org/Directory/Emergency_icon.gif",
-    //                                        pointRadius: 10}),
-    //     protocol: new OpenLayers.Protocol.HTTP({
-    //         url: "http://haiti.ushahidi.com/feed/?l=100",
-    //         format: new OpenLayers.Format.GeoRSS({
-    //             extractStyles: true, 
-    //             extractAttributes: true
-    //         })
-    //     }),
-    //     linkId: 'ushinc',
-    //     visibility: false
-    // });
-    // ushahidiIncidents.events.on({
-    //     "featureselected": onFeatureSelect,
-    //     "featureunselected": onFeatureUnselect
-    // });
-    // sfc_overlays.push(ushahidiIncidents);       
-    // ushahidi_overlays.push(ushahidiIncidents);  
-    // map.addLayers(ushahidi_overlays);
-
-
 
     /////////////////////////////////////
     // GeoCommons Overlays
@@ -311,7 +222,6 @@ Ext.onReady(function() {
     /////////////////////////////////////
     var response_locations = [];
 
-
     //Medical Centers
     var geocommonsMedical = new OpenLayers.Layer.GML(
         "Medical Centers (GeoCommons)", "data/geocommons/302.kml", 
@@ -348,7 +258,7 @@ Ext.onReady(function() {
                 extractStyles: true, 
                 extractAttributes: true
             },
-            linkId: 'sahhosp',
+            linkId: 'sahhosp'
         }
     );
     sahanaHospitals.events.on({
@@ -371,7 +281,7 @@ Ext.onReady(function() {
                 extractStyles: true, 
                 extractAttributes: true
             },
-            linkId: 'sahoff',
+            linkId: 'sahoff'
         }
     );
     sahanaOffices.events.on({
@@ -380,131 +290,6 @@ Ext.onReady(function() {
     });
     response_locations.push(sahanaOffices);        
     sfc_overlays.push(sahanaOffices);   
-
-    //Food Distribution Centers
-    /*var foodDistributionCenters = new OpenLayers.Layer.Vector("Food Distribution Centers", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        styleMap: new OpenLayers.StyleMap({'externalGraphic': "http://www.realmexmipueblo.com/images/food_icon.gif",
-                                           pointRadius: 10}),
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://ispatial.t-sciences.com/haiti/tmp/kml/e6e/2a2/097/46d/major_food__water_distribution_centers_haiti_1.19.2010.kml",
-            format: new OpenLayers.Format.KML({
-                extractStyles: false, 
-                extractAttributes: true
-            })
-        }),
-        linkId: 'fooddist',
-        visibility: false
-    });
-    foodDistributionCenters.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    sfc_overlays.push(foodDistributionCenters); 
-    overlays.push(foodDistributionCenters);    */ 
-
-    map.addLayers(response_locations);
-    map.addLayers(idp_camps);
-    /////////////////////////////////////
-    // InRelief Overlays
-    /////////////////////////////////////
-    /*var inrelief_overlays = [];
-
-    var spotLastLoc = new OpenLayers.Layer.Vector("SPOT Last Location", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://hurakan.ucsd.edu/cwid/NspotLastLocation.kml",
-            format: new OpenLayers.Format.KML({
-                extractAttributes: true,
-                maxDepth: 3
-            })
-        }),
-        linkId: 'spot1',
-        visibility: false
-    });
-    spotLastLoc.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    inrelief_overlays.push(spotLastLoc);        
-    sfc_overlays.push(spotLastLoc);     
-    var spotMessage = new OpenLayers.Layer.Vector("SPOT Message", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://hurakan.ucsd.edu/cwid/NspotMessage.kml",
-            format: new OpenLayers.Format.KML({
-                extractAttributes: true,
-                maxDepth: 3
-            })
-        }),
-        linkId: 'spot2',
-        visibility: false
-    });
-    spotMessage.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    inrelief_overlays.push(spotMessage);        
-    sfc_overlays.push(spotMessage);     
-    
-    var latitude = new OpenLayers.Layer.Vector("SPOT Latitude", {
-        projection: map.displayProjection,
-        strategies: [new OpenLayers.Strategy.Fixed()],
-        visibility: false,
-        format: OpenLayers.Format.KML, 
-        protocol: new OpenLayers.Protocol.HTTP({
-            url: "http://hurakan.ucsd.edu/cwid/Latitude.kml",
-            format: new OpenLayers.Format.KML({
-                extractAttributes: true,
-                maxDepth: 3
-            })
-        }),
-        linkId: 'spot3',
-        visibility: false
-    });
-    latitude.events.on({
-        "featureselected": onFeatureSelect,
-        "featureunselected": onFeatureUnselect
-    });
-    inrelief_overlays.push(latitude);   
-    sfc_overlays.push(latitude);        
-    
-
-
-    map.addLayers(inrelief_overlays);
-    */
-
-    // drawing_layers = [];
-    // var params = OpenLayers.Util.getParameters();
-    // var editingLayer;
-    // if (params.editlayers) {
-    //     var editId = params.editlayers.split(",")[0];
-    //     editingLayer = new OpenLayers.Layer.GML("Local Layer " + editId, 
-    //         "http://cmapdemo.labs.metacarta.com/featurestore/layer/" + editId,
-    //         {'remote_id': parseInt(editId), format: OpenLayers.Format.GeoJSON, editLayer: true, projection: new OpenLayers.Projection("EPSG:4326"), visibility: false}
-    //     );
-    // } else {   
-    //     editingLayer = new OpenLayers.Layer.Vector("Local Layer", {'editLayer': true});
-    // }
-    // HAITI.editingLayer = editingLayer;
-    // drawing_layers.push(editingLayer);
-    // editingLayer.events.on({
-    //     "featureselected": onFeatureSelect,
-    //     "featureunselected": onFeatureUnselect
-    // });
-    // sfc_overlays.push(editingLayer);
-    // map.addLayers(drawing_layers);
-
-
 
     var sf = new OpenLayers.Control.SelectFeature(sfc_overlays, {clickOut: true});
     map.addControl(sf);
@@ -519,8 +304,8 @@ Ext.onReady(function() {
             buffer: 0, isBaseLayer: false, visibility: false,
             linkId: 'pdf6k'
         }    
-                                          
-                                         );    
+    );    
+
     pdf_6k.events.on({
         "visibilitychanged": function() { 
             if (this.visibility) {
@@ -558,28 +343,11 @@ Ext.onReady(function() {
     // This actually determines the order of the groups
     layer_groups.push({name:'Infrastructure', layers:osm_layers,
                        expanded:true});
-    // layer_groups.push({name:'Image Overlays', layers:image_overlays,
-    //                    expanded:true});
-    // layer_groups.push({name:'Ushahidi Overlays', layers:ushahidi_overlays,
-    //                    expanded:true});
     layer_groups.push({name:'IDP Camps', layers:idp_camps,
                        expanded:true});
     layer_groups.push({name:'Response Locations', layers:response_locations,
                        expanded:true});
-    // layer_groups.push({name:'Drone-style Overlays', layers:p3_overlays,
-    //                    expanded:false});
-    // layer_groups.push({name:'Topo Maps', layers:topo_layers,
-    //                    expanded:false});
-    // layer_groups.push({name:'Hi Res Aerials Image', layers:hires_layers,expanded:false});
-    // layer_groups.push({name:'Digital Globe', layers:dglobe_layers,
-    //                    expanded:false});
-    // layer_groups.push({name:'GeoEye', layers:geoeye_layers,
-    //                    expanded:false});
-    // layer_groups.push({name:'CNES/SpotImage', layers:spot_layers,
-    //                    expanded:false});
-    /*layer_groups.push({name:'InRelief Overlays', layers:inrelief_overlays,
-                       expanded:false});*/
-    // layer_groups.push({'name': "Local Drawing Layers", layers: drawing_layers, expanded: false});
+
     for (var p=0; p<layer_groups.length; p+=1){
         var my_layers = layer_groups[p]["layers"];
         var my_store = new GeoExt.data.LayerStore({
@@ -604,17 +372,17 @@ Ext.onReady(function() {
         }));
     }
 
-
     HAITI.stores = [];
     HAITI.store_lyrs = [];
     HAITI.lyrs = []
+
     ////// Add Control for PDF Selection ///////
     ////// Sourced From Controls.js
     var showLoc = new ShowLoc(); 
     var streetQuery = new StreetQuery();
     HAITI.streetQuery = streetQuery;
     var selectPdfControl = new SelectPdfControl();
-    ///////////////////////////////////////////
+
     map.addControl(new OpenLayers.Control.MGRSMousePosition());
     map.addControl(new OpenLayers.Control.Scale());
 
@@ -634,7 +402,6 @@ Ext.onReady(function() {
         tooltip: "Click map to show location in Decimal degrees + DDMMSS",
         group: "draw"
     });
-
 
     toolbarItems = [show_loc];
     var mapPanel = new GeoExt.MapPanel({
@@ -695,11 +462,11 @@ Ext.onReady(function() {
         layout: 'accordion',
         items: [layerTree]
     });
+
     var west = new Ext.Panel({
         region: 'west',
         id: 'west-panel',
         title:'&nbsp',
-        //split:true,
         width: 300,
         minSize: 175,
         maxSize: 400,
@@ -717,8 +484,9 @@ Ext.onReady(function() {
                 title: "Contributors",
                 region: "south",
                 border:false
-            }, 
+            }
         ]
+
     });
 
     new Ext.Viewport({
@@ -732,10 +500,9 @@ Ext.onReady(function() {
             title: "",
             layout: 'fit',
             items: [mapPanel]
-        }, west]
+        },
+	west]
     });
-    // Ext.DomHelper.append(Ext.get('title'),
-    //     {tag: 'img', id: 'title_logo',src: 'images/haiti_logo_telascience.png', height: 58});
 
     setMapCenter();
 
