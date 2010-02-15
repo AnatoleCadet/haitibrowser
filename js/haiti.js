@@ -73,30 +73,6 @@ Ext.onReady(function() {
     }));    
 
     /////////////////////////////////////
-    // Topo Layers
-    /////////////////////////////////////
-    var topo_layers = [];
-    var tlm = new OpenLayers.Layer.XYZ(
-        "Haiti Collarless 1:50k",
-        "http://hypercube.telascience.org/tiles/1.0.0/haiti-tlm-50/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'tlm50'
-        }
-    );
-    topo_layers.push(tlm); 
-    var city = new OpenLayers.Layer.XYZ(
-        "PAP Collared 1:12.5k",
-        "http://hypercube.telascience.org/tiles/1.0.0/haiti-city/${z}/${x}/${y}.jpg",
-        {
-            isBaseLayer: false, buffer:0,
-            visibility: false, linkId: 'city'
-        }
-    );
-    topo_layers.push(city); 
-    map.addLayers(topo_layers);
-
-    /////////////////////////////////////
     // OSM Overlay Layers
     /////////////////////////////////////
     var osm_layers = [];
@@ -295,46 +271,6 @@ Ext.onReady(function() {
     map.addControl(sf);
     sf.activate();
     HAITI.sfc = sf;
-    var image_overlays = [];
-    var pdf_6k = new OpenLayers.Layer.WMS("6K Delta State PDFs (Click for link)",
-        "http://hypercube.telascience.org/cgi-bin/mapserv", {
-            'map':'/geo/haiti/mapfiles/vector.map',
-            'layers':'pdf_6k', 'transparent': true
-        }, {
-            buffer: 0, isBaseLayer: false, visibility: false,
-            linkId: 'pdf6k'
-        }    
-    );    
-
-    pdf_6k.events.on({
-        "visibilitychanged": function() { 
-            if (this.visibility) {
-                if (!this.control) {
-                    this.control = new OpenLayers.Control.Click();
-                    this.map.addControl(this.control);
-                }
-                this.control.activate();
-            } else {
-                this.control.deactivate();
-            }    
-        },
-        'scope': pdf_6k
-    });    
-    image_overlays.push(pdf_6k);
-    
-    var warper_wfp28 = new OpenLayers.Layer.WMS("WFP Logistics (01-28)",
-        "http://warper.geothings.net/maps/wms/2013", 
-        {'format': 'image/jpeg'}, 
-        {isBaseLayer: false, 
-         singleTile: true,
-         transitionEffect: 'resize', 
-         visibility: false});
-    image_overlays.push(warper_wfp28);
-    map.addLayers(image_overlays);
-   
-    lookupLayer = new OpenLayers.Layer.Vector("", {styleMap: new OpenLayers.StyleMap({'pointRadius': 4, 'fillColor': 'red'})});
-    map.addLayer(lookupLayer);
-
 
     /////////////////////////////////////
     // Layer Stores
