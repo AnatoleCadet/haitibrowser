@@ -2,3 +2,39 @@ An offline dashboard, or common operating picture, of Haiti basemap tiles, data 
 
 This was developed by Chris Schmidt and modified by Andrew Turner to run offline. It is being deployed on USB sticks and hard drives to the Government of Haiti in conjunction with the World Bank on the Data Dissemination Project.
 
+# Install
+
+To install the browser, just download an unzip to a hard drive or USB stick. There is already vector data of hospitals, IDP camps on the disk. 
+
+For Tiles, you can use [MapBox tiles](http://mapbox-tilesets.s3.amazonaws.com/world-dark-0-8.tgz) or download tiles from http://tiles_gc.s3.amazonaws.com.
+
+# Adding Data
+
+To add data to the browser, store in the data/ directory. Then modify js/haiti.js to include the data layer. Add something like the following below the "GeoCommons Overlays" section:
+
+    var yourNewKML = new OpenLayers.Layer.GML(
+        "KML Layer Title", "data/your.kml", 
+        {
+            projection: map.displayProjection,
+            format: OpenLayers.Format.KML, 
+            formatOptions: {
+                maxDepth: 3,
+                extractStyles: true, 
+                extractAttributes: true
+            },
+            linkId: 'titleId',
+            visibility: false
+        }
+    );
+
+    refugeeCamps.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
+    });
+    idp_camps.push(yourNewKML);      
+    sfc_overlays.push(yourNewKML);  
+    
+    
+
+Reload the index.html and your layer should now be available.
+
